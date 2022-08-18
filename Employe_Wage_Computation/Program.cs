@@ -10,6 +10,9 @@ namespace Employe_Wage_Computation
 
             EmployeePresentAbsent employee = new EmployeePresentAbsent();
             employee.EmpPrsentAbsent();
+
+            Emp_Daily_Wage dailywage = new Emp_Daily_Wage();
+            dailywage.EmpDailyWage();
         }
     }
 }
