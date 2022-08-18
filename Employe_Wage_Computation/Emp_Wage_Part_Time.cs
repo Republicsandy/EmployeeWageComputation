@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Employe_Wage_Computation
 {
-    class Emp_Daily_Wage
+    class Emp_Wage_Part_Time
     {
-        public void EmpDailyWage()
+        public void EmpWagePartTime()
         {
             //Constant
-            int IS_Full_Time = 1;
+            int IS_Part_Time = 1;
+            int IS_Full_Time = 2;
             int EMP_RATE_PER_HOUR = 20;
             //Varibles
             int empHrs = 0;
@@ -20,7 +21,11 @@ namespace Employe_Wage_Computation
             int empCheck = random.Next(0, 2);
             //Computation
 
-            if (empCheck == IS_Full_Time)
+            if (empCheck == IS_Part_Time)
+            {
+                empHrs = 4;
+            }
+            else if(empCheck == IS_Full_Time)
             {
                 empHrs = 8;
             }

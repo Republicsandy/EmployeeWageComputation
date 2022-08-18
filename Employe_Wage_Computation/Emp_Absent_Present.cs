@@ -11,7 +11,7 @@ namespace Employe_Wage_Computation
         public void EmpPrsentAbsent()
         {
             //Constant
-            const int IS_Full_Time = 1;
+            int IS_Full_Time = 1;
             Random random = new Random();
             int empCheck = random.Next(0, 2);
             //Computation

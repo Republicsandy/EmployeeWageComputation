@@ -13,6 +13,9 @@ namespace Employe_Wage_Computation
 
             Emp_Daily_Wage dailywage = new Emp_Daily_Wage();
             dailywage.EmpDailyWage();
+
+            Emp_Wage_Part_Time emptime = new Emp_Wage_Part_Time();
+            emptime.EmpWagePartTime();
         }
     }
 }
