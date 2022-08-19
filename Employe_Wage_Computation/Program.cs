@@ -16,6 +16,9 @@ namespace Employe_Wage_Computation
 
             Emp_Wage_Part_Time emptime = new Emp_Wage_Part_Time();
             emptime.EmpWagePartTime();
+
+            SwitchCaseStatement switchcase = new SwitchCaseStatement();
+            switchcase.DailyWage();
         }
     }
 }
