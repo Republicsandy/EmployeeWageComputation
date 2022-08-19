@@ -18,7 +18,10 @@ namespace Employe_Wage_Computation
             emptime.EmpWagePartTime();
 
             SwitchCaseStatement switchcase = new SwitchCaseStatement();
-            switchcase.DailyWage();
+            switchcase.TotalDailyWage();
+
+            Monthly_Emp_wage empmonthlywage = new Monthly_Emp_wage();
+            empmonthlywage.EmpMonthlyWage();
         }
     }
 }
