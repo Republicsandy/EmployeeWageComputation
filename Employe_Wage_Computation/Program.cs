@@ -21,7 +21,7 @@ namespace Employe_Wage_Computation
             switchcase.TotalDailyWage();
 
             Monthly_Emp_wage empmonthlywage = new Monthly_Emp_wage();
-            empmonthlywage.EmpMonthlyWage();
+            empmonthlywage.TotalMonthlyWage();
         }
     }
 }
