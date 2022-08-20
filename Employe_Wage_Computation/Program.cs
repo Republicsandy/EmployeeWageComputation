@@ -22,6 +22,9 @@ namespace Employe_Wage_Computation
 
             Monthly_Emp_wage empmonthlywage = new Monthly_Emp_wage();
             empmonthlywage.TotalMonthlyWage();
+
+            Emp_Wage_Hour_Day_condition dayhours = new Emp_Wage_Hour_Day_condition();
+            dayhours.ConditionDayHours();
         }
     }
 }
