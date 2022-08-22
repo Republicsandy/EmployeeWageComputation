@@ -14,6 +14,7 @@ namespace Employe_Wage_Computation
             Console.WriteLine("Enter 5 to check monthly wage using switch ");
             Console.WriteLine("Enter 6 to check emp condition using switch ");
             Console.WriteLine("Enter 7 to check the salary for single companies");
+            Console.WriteLine("Enter 8 to check the salary for mutiple companies");
             int getValueByUser = Convert.ToInt32(Console.ReadLine());
             switch (getValueByUser)
             {
@@ -44,6 +45,11 @@ namespace Employe_Wage_Computation
                 case 7:
                     Refactor_Compute_Employee_Wage refactorwagecode = new Refactor_Compute_Employee_Wage();
                     refactorwagecode.ComputeEmployeeWage("Infy",100,20,100);
+                    break;
+                case 8:
+                    Emp_Wage_Multiple_Company multiplecompany = new Emp_Wage_Multiple_Company();
+                    multiplecompany.EmployeeWageMultipleCompany("Infy", 100, 20, 100);
+                    multiplecompany.EmployeeWageMultipleCompany("Lic", 200, 20, 100);
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
