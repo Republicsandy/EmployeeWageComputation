@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Employe_Wage_Computation
 {
-    class EmployeePresentAbsent
+    class Employee_Present_Absent
     {
         public void EmpPrsentAbsent()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Employe_Wage_Computation
 {
-    class SwitchCaseStatement
+    class Switch_Case_Statement
     {
         public const int IS_Full_Time = 1;
         public const int IS_Part_Time = 2;
