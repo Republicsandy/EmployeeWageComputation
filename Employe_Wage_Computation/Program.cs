@@ -15,6 +15,7 @@ namespace Employe_Wage_Computation
             Console.WriteLine("Enter 6 to check emp condition using switch ");
             Console.WriteLine("Enter 7 to check the salary for single companies");
             Console.WriteLine("Enter 8 to check the salary for mutiple companies");
+            Console.WriteLine("Enter 9 to check the salary by rebuilder for mutiple companies");
             int getValueByUser = Convert.ToInt32(Console.ReadLine());
             switch (getValueByUser)
             {
@@ -50,6 +51,14 @@ namespace Employe_Wage_Computation
                     Emp_Wage_Multiple_Company multiplecompany = new Emp_Wage_Multiple_Company();
                     multiplecompany.EmployeeWageMultipleCompany("Infy", 100, 20, 100);
                     multiplecompany.EmployeeWageMultipleCompany("Lic", 200, 20, 100);
+                    break;
+                case 9:
+                    Emp_Wage_Builder infy = new Emp_Wage_Builder("Infy", 100, 20, 100);
+                    Emp_Wage_Builder lic = new Emp_Wage_Builder("Lic", 200, 20, 100);
+                    infy.ComputeEmpWage();
+                    Console.WriteLine(infy.toString());
+                    lic.ComputeEmpWage();
+                    Console.WriteLine(lic.toString());
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
