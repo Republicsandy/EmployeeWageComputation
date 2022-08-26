@@ -16,6 +16,7 @@ namespace Employe_Wage_Computation
             Console.WriteLine("Enter 7 to check the salary for single companies");
             Console.WriteLine("Enter 8 to check the salary for mutiple companies");
             Console.WriteLine("Enter 9 to check the salary by rebuilder for mutiple companies");
+            Console.WriteLine("Enter 10 to check to refector for mutiple companies");
             int getValueByUser = Convert.ToInt32(Console.ReadLine());
             switch (getValueByUser)
             {
@@ -59,6 +60,12 @@ namespace Employe_Wage_Computation
                     Console.WriteLine(infy.toString());
                     lic.ComputeEmpWage();
                     Console.WriteLine(lic.toString());
+                    break;
+                case 10:
+                    EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
+                    empWageBuilder.addCompanyEmpWage("Nmdc", 20, 2, 10);
+                    empWageBuilder.addCompanyEmpWage("Ntpc", 10, 4, 20);
+                    empWageBuilder.computeEmpWage();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
