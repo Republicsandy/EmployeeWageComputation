@@ -4,6 +4,10 @@ namespace Employe_Wage_Computation
 {
     internal class EmpWageBuilderArray
     {
+        public EmpWageBuilderArray()
+        {
+        }
+
         internal void addCompanyEmpWage(string v1, int v2, int v3, int v4)
         {
             throw new NotImplementedException();
