@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Employe_Wage_Computation
+namespace Employe_Wage_Computation.CompanyEmpWage
 {
-    public class EmpWageBuliderArray
+    public class EmpWageBuliderArray : CompanyEmpWage
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
