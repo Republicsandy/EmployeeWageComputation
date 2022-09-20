@@ -13,6 +13,7 @@ namespace Employe_Wage_Computation
             empWageBuilder.addCompanyEmpWage("Dmart", 20, 2, 10);
             empWageBuilder.addCompanyEmpWage("Reliance", 10, 4, 20);
             empWageBuilder.computeEmpWage();
+            Console.WriteLine("Tolat wage for Dmart Company :" + empWageBuilder.getTotalWage("Dmart"));
         }
     }
 }
